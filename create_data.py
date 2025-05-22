@@ -9,7 +9,7 @@ x = np.linspace(0, 20, 100)
 
 #define function
 noise = np.random.normal(0, 10, size=x.shape)  # mean=0, std=2
-y = np.round(np.random.uniform(5, 10), 4) * x + np.round(np.random.uniform(0, 5), 4) + noise
+y = np.round(np.random.uniform(5, 10), 4) * x + np.round(np.random.uniform(1, 5), 4) + noise
 
 #dataframe creation
 df = pd.DataFrame({'x': x, 'y': y})
